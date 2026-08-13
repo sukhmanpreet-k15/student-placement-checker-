@@ -9,7 +9,7 @@ import os
 # ----------------------------------------------------------------
 # 1. Load the labeled data
 # ----------------------------------------------------------------
-df = pd.read_excel(r"C:\Users\sukhm\OneDrive\Desktop\pydev\project_ml_place_chk\updated_project.xlsx")
+df = pd.read_excel(r"C:\Users\sukhm\OneDrive\Desktop\pydev\student-placement-checker-\updated_project.xlsx")
 
 FEATURE_COLUMNS = [
     "total_lines",

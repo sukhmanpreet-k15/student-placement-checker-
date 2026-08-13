@@ -10,7 +10,7 @@ import os
 # ----------------------------------------------------------------
 # 1. Load the labeled data
 # ----------------------------------------------------------------
-df = pd.read_csv(r"C:\Users\sukhm\OneDrive\Desktop\pydev\project_ml_place_chk\placement_data.csv")
+df = pd.read_csv(r"C:\Users\sukhm\OneDrive\Desktop\pydev\student-placement-checker-\final_placement.csv")
 
 FEATURE_COLUMNS = [
     "cgpa",

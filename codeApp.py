@@ -164,13 +164,13 @@ def extract_features(code_files):
 
 @st.cache_resource
 def load_project_model():
-    with open(r"C:\Users\sukhm\OneDrive\Desktop\pydev\project_ml_place_chk\models\project_eval_model.pkl", "rb") as f:
+    with open(r"C:\Users\sukhm\OneDrive\Desktop\pydev\student-placement-checker-\models\project_eval_model.pkl", "rb") as f:
         return pickle.load(f)
 
 
 @st.cache_resource
 def load_placement_model():
-    with open(r"C:\Users\sukhm\OneDrive\Desktop\pydev\project_ml_place_chk\models\placement_model.pkl", "rb") as f:
+    with open(r"C:\Users\sukhm\OneDrive\Desktop\pydev\student-placement-checker-\models\placement_model.pkl", "rb") as f:
         return pickle.load(f)
 
 
@@ -375,7 +375,6 @@ elif st.session_state.stage == "project_eval":
 
 elif st.session_state.stage == "placement_prediction":
     st.write("Enter your academic details below, then click Predict.")
-
     cgpa = st.number_input("CGPA", min_value=0.0, max_value=10.0, step=0.1)
     internships = st.number_input("Number of Internships", min_value=0, max_value=20, step=1)
     projects_done = st.number_input("Number of Projects Done", min_value=0, max_value=50, step=1)
